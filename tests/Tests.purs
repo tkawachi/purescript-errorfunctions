@@ -50,3 +50,6 @@ main = do
   quickCheck' 1 $ (erf 2.00 =~ 0.9953223)
   quickCheck' 1 $ (erf 3.00 =~ 0.9999779)
   
+  quickCheck $ \n -> case erfinv (erf n) of
+    Just x -> x =~ n <?> "n = " ++ show n ++ ", x = " ++ show x
+    Nothing -> false <?> "Got Nothing"
