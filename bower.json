@@ -1,0 +1,32 @@
+{
+  "name": "purescript-erf",
+  "description": "Error function in purescript",
+  "keywords": [
+    "purescript"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "tests",
+    "js",
+    "tmp",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-arrays": "*",
+    "purescript-maybe": "*",
+    "purescript-foldable-traversable": "*",
+    "purescript-globals": "~0.1.5"
+  },
+  "devDependencies": {
+    "purescript-math": "*",
+    "purescript-quickcheck": "*"
+  },
+  "resolutions": {
+    "purescript-strings": "~0.4.0"
+  }
+}
